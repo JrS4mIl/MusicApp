@@ -15,10 +15,12 @@ const SongCard=(props)=>{
                 <View style={styles.info_container}>
                     <Text>{props.song.artist}</Text>
                     <Text style={styles.year}>{props.song.year}</Text>
+
                 </View>
 
                 {props.song.isSoldOut && (<View style={styles.soldout_container}>
                     <Text style={styles.soldout_title}>TUKENDI</Text>
+
                 </View>)}
               </View>
             </View>
